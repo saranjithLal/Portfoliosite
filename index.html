@@ -1,89 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Saranjith Portfolio</title>
+    <title>Saranjith Lal</title>
 
-<style>
-    body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background: #0f172a;
-        color: #fff;
-        text-align: center;
-    }
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
 
-    header {
-        padding: 40px 20px;
-    }
+        /* Top Bar */
+        .top-bar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #0b1a2b;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            z-index: 1000;
+        }
 
-    h1 {
-        font-size: 36px;
-        margin-bottom: 10px;
-    }
+        .btn {
+            padding: 10px 15px;
+            border-radius: 6px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
 
-    p {
-        color: #cbd5e1;
-    }
+        .linkedin { background: #0077b5; }
+        .call { background: #28a745; }
+        .download { background: #ff9800; }
 
-    .btn {
-        display: inline-block;
-        margin-top: 20px;
-        padding: 12px 20px;
-        background: #22c55e;
-        color: #000;
-        text-decoration: none;
-        border-radius: 8px;
-        font-weight: bold;
-    }
-
-    .btn:hover {
-        background: #16a34a;
-    }
-
-    .pdf-container {
-        margin: 40px auto;
-        width: 90%;
-        max-width: 900px;
-        background: #1e293b;
-        padding: 20px;
-        border-radius: 12px;
-    }
-
-    iframe {
-        width: 100%;
-        height: 600px;
-        border: none;
-        border-radius: 8px;
-    }
-
-    footer {
-        margin: 40px 0;
-        color: #64748b;
-        font-size: 14px;
-    }
-</style>
-
+        /* PDF Full Screen */
+        iframe {
+            width: 100%;
+            height: 100vh;
+            border: none;
+            margin-top: 50px;
+        }
+    </style>
 </head>
 
 <body>
 
-<header>
-    <h1>Saranjith Lal</h1>
-    <p>Graphic Designer | Performance Ads | AI Visuals</p>
+    <div class="top-bar">
+        <a class="btn linkedin" href="https://www.linkedin.com/in/saranjith-lal-22821614b/" target="_blank">
+            LinkedIn
+        </a>
 
-    <a class="btn" href="print%20PF1%20low.pdf" download>Download Resume</a>
-</header>
+        <a class="btn call" href="tel:+917907978994">
+            Call
+        </a>
 
-<div class="pdf-container">
-    <h2>My Resume</h2>
-    <iframe src="print%20PF1%20low.pdf"></iframe>
-</div>
+        <a class="btn download" href="resume.pdf" download>
+            Download PDF
+        </a>
+    </div>
 
-<footer>
-    © 2026 Saranjith Lal — Portfolio Website
-</footer>
+    <iframe src="resume.pdf"></iframe>
 
 </body>
 </html>
